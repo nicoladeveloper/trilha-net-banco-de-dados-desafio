@@ -5,7 +5,9 @@ SELECT nome,ano, duracao
 From Filmes
 ORDER BY ano ASC;
 
-SELECT nome = 'De Volta para o Futuro';
+SELECT nome , ano, duracao
+FROM Filmes
+WHERE nome = 'De Volta para o Futuro';
 
 Select nome, ano, duracao
 From Filmes
@@ -39,7 +41,7 @@ FROM Generos, Filmes;
 
 SELECT nome, genero
 FROM Generos, Filmes
-WHERE genero = 'Mistério';
+WHERE genero = 'MistÃ©rio';
 
 SELECT nome, PrimeiroNome, UltimoNome,Papel
 From Filmes, Atores,ElencoFilme;
